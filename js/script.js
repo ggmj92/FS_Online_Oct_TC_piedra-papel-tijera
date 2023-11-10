@@ -16,7 +16,7 @@ document.getElementById('tijera').addEventListener('click', function () {
 })
 
 //botonJugada.forEach((boton) => {
-boton.addEventListener('click', function () {
+botonJugada.addEventListener('click', function () {
     const seleccionPc = opciones[Math.floor(Math.random() * opciones.length)]
     //const seleccionUsuario
     const conseguirResultado = (seleccionPc, seleccionUsuario) => {
@@ -48,6 +48,7 @@ boton.addEventListener('click', function () {
             puntosUsuarios++
         }
     }
+
     const resultado = conseguirResultado(seleccionPc, seleccionUsuario)
     sumaResultado(resultado)
 });
